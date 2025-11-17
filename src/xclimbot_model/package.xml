@@ -1,0 +1,37 @@
+<package format="3">
+  <name>xclimbot_model</name>
+  <version>2.0.7</version>
+  <description>
+    <p>URDF Description package for X-Climbot</p>
+    <p>This package contains configuration data, 3D models and launch files for X-Climbot robot</p>
+  </description>
+  <author email="chenyulin@sjtu.edu.cn">Yulin Chen</author>
+  <maintainer email="chenyulin@sjtu.edu.cn">Yulin Chen</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>moveit_resources_panda_description</exec_depend>
+  <!-- disabled to remove circular dependencies
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  -->
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <!-- TODO(#40): Package not available in ROS 2, find equivalent when migrating launch files
+  <exec_depend>topic_tools</exec_depend>
+  -->
+  <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment.
+       Commented the dependency until this works. -->
+  <!-- <exec_depend>warehouse_ros_mongo</exec_depend> -->
+
+  <export>
+      <build_type>ament_cmake</build_type>
+  </export>
+</package>

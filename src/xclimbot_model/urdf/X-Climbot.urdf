@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="X-Climbot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00611466525824911 1.52266048728533E-05 -0.0458797101075132"
+        rpy="0 0 0" />
+      <mass
+        value="0.793310893293405" />
+      <inertia
+        ixx="0.000488697994170795"
+        ixy="1.94308375834106E-05"
+        ixz="-3.60314189788114E-05"
+        iyy="0.0021909412575143"
+        iyz="6.04087570215711E-07"
+        izz="0.002362105074245" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="l1">
+    <inertial>
+      <origin
+        xyz="0.000840561963848629 0.0113875783222504 0.0400824119208252"
+        rpy="0 0 0" />
+      <mass
+        value="0.1430626016653" />
+      <inertia
+        ixx="0.000115582358856404"
+        ixy="7.81499715910119E-07"
+        ixz="-1.12848931429923E-06"
+        iyy="0.000126111630974415"
+        iyz="-1.52836380116219E-05"
+        izz="6.00693976013135E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="l1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l2">
+    <inertial>
+      <origin
+        xyz="-9.63287409838642E-08 -0.0114185659312045 0.0162012482514264"
+        rpy="0 0 0" />
+      <mass
+        value="0.14306262010604" />
+      <inertia
+        ixx="0.000115524424034121"
+        ixy="2.99294251603093E-10"
+        ixz="3.5137908355297E-10"
+        iyy="0.000136684035722146"
+        iyz="-1.53250606329366E-05"
+        izz="4.95547653168109E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0800000000000001"
+      rpy="0 0.0289375288126048 -0.0736872405564034" />
+    <parent
+      link="l1" />
+    <child
+      link="l2" />
+    <axis
+      xyz="-0.00592711844275336 -0.999982419761838 -0.000171564051519822" />
+  </joint>
+  <link
+    name="l3">
+    <inertial>
+      <origin
+        xyz="0.00220880087049258 -2.1811668304117E-05 0.18510895301996"
+        rpy="0 0 0" />
+      <mass
+        value="0.731691814404623" />
+      <inertia
+        ixx="0.00440475743452973"
+        ixy="-1.0044055556359E-07"
+        ixz="-1.48112615339781E-05"
+        iyy="0.00442116921181217"
+        iyz="1.49284620098977E-07"
+        izz="0.00038619650944185" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0800000000000013"
+      rpy="0 0.000127825682332594 0.00183898988794448" />
+    <parent
+      link="l2" />
+    <child
+      link="l3" />
+    <axis
+      xyz="-0.000128141190019915 -0.000171566775075488 0.999999977072338" />
+  </joint>
+  <link
+    name="l4">
+    <inertial>
+      <origin
+        xyz="-7.88980209281281E-05 -0.00392581915723023 0.202385115747512"
+        rpy="0 0 0" />
+      <mass
+        value="0.832342235325522" />
+      <inertia
+        ixx="0.00452334968366428"
+        ixy="1.23051855615029E-07"
+        ixz="-3.46298344597399E-10"
+        iyy="0.00452809686716942"
+        iyz="-9.28294510352387E-11"
+        izz="0.000411899190458377" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j4"
+    type="continuous">
+    <origin
+      xyz="-4.87188928522952E-05 -7.89207165349803E-05 0.379999990106851"
+      rpy="0.000127841608446275 -0.0185670506826425 -1.58057542076899" />
+    <parent
+      link="l3" />
+    <child
+      link="l4" />
+    <axis
+      xyz="0 -0.999999999999073 0" />
+  </joint>
+  <link
+    name="l5">
+    <inertial>
+      <origin
+        xyz="7.87788012611979E-05 -0.0114172583221583 0.0162035655941422"
+        rpy="0 0 0" />
+      <mass
+        value="0.143061922937318" />
+      <inertia
+        ixx="0.000115524003812258"
+        ixy="-1.60426335855584E-10"
+        ixz="2.87594107321105E-10"
+        iyy="0.000136683650857311"
+        iyz="-1.53255513436982E-05"
+        izz="4.95552955488083E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j5"
+    type="continuous">
+    <origin
+      xyz="0 0 0.439999999999592"
+      rpy="0 0.0129068765606677 3.14159265358979" />
+    <parent
+      link="l4" />
+    <child
+      link="l5" />
+    <axis
+      xyz="0 0.999999999999073 0" />
+  </joint>
+  <link
+    name="l6">
+    <inertial>
+      <origin
+        xyz="-0.00580435778022192 -1.44530285602351E-05 0.0435513914361469"
+        rpy="0 0 0" />
+      <mass
+        value="0.835722425678761" />
+      <inertia
+        ixx="0.000502039940519556"
+        ixy="-1.94308094117804E-05"
+        ixz="3.60314117214751E-05"
+        iyy="0.00220428328751165"
+        iyz="6.04087755501375E-07"
+        izz="0.00238596164743948" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://X-Climbot/meshes/l6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j6"
+    type="continuous">
+    <origin
+      xyz="7.8879062170939E-05 0 0.0800024903265206"
+      rpy="0 0 -1.32134118739776" />
+    <parent
+      link="l5" />
+    <child
+      link="l6" />
+    <axis
+      xyz="0 0 -0.999999999999073" />
+  </joint>
+</robot>

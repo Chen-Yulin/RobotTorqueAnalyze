@@ -1,0 +1,27 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: X-Climbot
+    relative_path: urdf/X-Climbot.urdf
+  srdf:
+    relative_path: config/X-Climbot.srdf
+  package_settings:
+    author_name: Yulin Chen
+    author_email: chenyulin@sjtu.edu.cn
+    generated_timestamp: 1761638640
+  control_xacro:
+    command:
+      - position
+      - velocity
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+      - velocity
+    state:
+      - position
+      - velocity
